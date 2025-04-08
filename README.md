@@ -91,3 +91,21 @@
 `SELECT nombre_articulo AS Nombre_Articulo, precio_articulo, nombre_fabricante AS Nombre_Fabricante FROM Articulo JOIN Fabricante;`
 
 ![Consulta 12](img/consulta_12.png  "Consulta 12")
+
+13.  Obtener un listado de artículos, incluyendo el nombre del artículo, su precio y el nombre de su fabricante.
+
+`SELECT nombre_articulo AS Nombre_Articulo, precio_articulo, nombre_fabricante FROM Articulo JOIN Fabricante;`
+
+![Consulta 13](img/consulta_13.png  "Consulta 13")
+
+14. Obtener el precio promedio de los productos de cada fabricante, mostrando solo los códigos de los fabricantes.
+
+`SELECT id_fabricante, AVG(precio_articulo) AS Precio_promedio FROM Articulo GROUP BY id_fabricante;`
+
+![Consulta 14](img/consulta_14.png  "Consulta 14")
+
+15. Mostrar el precio promedio de los productos de cada fabricante, mostrando el nombre del fabricante.
+
+`SELECT nombre_fabricante, AVG(precio_articulo) AS Precio_Promedio FROM Articulo JOIN Fabricante GROUP BY nombre_fabricante;`
+
+![Consulta 15](img/consulta_15.png  "Consulta 15")
