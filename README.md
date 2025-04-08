@@ -67,4 +67,27 @@
 
 ![Consulta 8](img/consulta_8.png  "Consulta 8")
 
+9. Mostrar el precio promedio de los artículos cuyo código de fabricante sea fab02.
 
+
+`SELECT AVG(precio_articulo) AS precio_promedio FROM Articulo WHERE id_fabricante = 'fab02';`
+
+![Consulta 9](img/consulta_9.png  "Consulta 9")
+
+10. Obtener el número de artículos cuyo precio sea mayor o igual a $50000.
+
+`SELECT nombre_articulo FROM Articulo WHERE precio_articulo >= 50000;`
+
+![Consulta 10](img/consulta_10.png  "Consulta 10")
+
+11. Obtener el nombre y el precio de los artículos cuyo precio sea igual o mayor a $50000 y ordenarlos descendentemente por precio, y luego ascendentemente por nombre.
+
+`SELECT nombre_articulo, precio_articulo FROM Articulo WHERE precio_articulo >= 50000 ORDER BY precio_articulo DESC, nombre_articulo ASC;`
+
+![Consulta 11](img/consulta_11.png  "Consulta 11")
+
+12. Mostrar el listado completo de artículos, incluyendo por cada artículo los datos del artículo y de su fabricante.
+
+`SELECT nombre_articulo AS Nombre_Articulo, precio_articulo, nombre_fabricante AS Nombre_Fabricante FROM Articulo JOIN Fabricante;`
+
+![Consulta 12](img/consulta_12.png  "Consulta 12")
