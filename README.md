@@ -57,6 +57,14 @@
 
 7. Obtener el nombre y el precio de los artículos en dolares.
 
+`SELECT nombre_articulo AS Articulo, precio_articulo / 4300 AS Precio USD;`
+
 ![Consulta 7](img/consulta_7.png  "Consulta 7")
 
-`SELECT nombre_articulo AS Articulo, precio_articulo / 4300 AS Precio USD;`
+8. Mostrar el precio promedio de todos los productos.
+
+`SELECT AVG(precio_articulo) AS precio_promedio FROM Articulo;`
+
+![Consulta 8](img/consulta_8.png  "Consulta 8")
+
+
